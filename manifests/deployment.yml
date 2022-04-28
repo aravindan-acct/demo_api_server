@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: petstoredeployment 
-          image: wafpm2022gartner.azurecr.io/waasdemo/petstoreapp:latest
+          image: wafpm2022gartner.azurecr.io/waasdemov2/petstore:latest
           ports:
           - containerPort: 8080
           env:
