@@ -24,4 +24,4 @@ spec:
             value: h6d7GEujNYW06idiNG1qaeuemqZWzZyO
           - name: DBSERVER
             value: 40.124.94.133
-      imagePullPolicy: Always
+      
