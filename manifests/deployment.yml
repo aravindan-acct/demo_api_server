@@ -1,0 +1,27 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: petstorev1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: petstorev1
+  template:
+    metadata:
+      labels:
+        app: petstorev1 
+    spec:
+      containers:
+        - name: petstoredeployment 
+          image: wafpm2022gartner.azurecr.io/waasdemo/petstoreapp:latest
+      imagePullPolicy: Always
+      ports:
+        - containerPort: 8080
+      env:
+        - name: DBUSER
+          value: wafdemodbuser
+        - name: DBPASSWORD
+          value: h6d7GEujNYW06idiNG1qaeuemqZWzZyO
+        - name: DBSERVER
+          value: 40.124.94.133
