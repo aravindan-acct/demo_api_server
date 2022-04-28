@@ -17,11 +17,11 @@ spec:
           image: wafpm2022gartner.azurecr.io/waasdemo/petstoreapp:latest
           ports:
           - containerPort: 8080
+          env:
+          - name: DBUSER
+            value: wafdemodbuser
+          - name: DBPASSWORD
+            value: h6d7GEujNYW06idiNG1qaeuemqZWzZyO
+          - name: DBSERVER
+            value: 40.124.94.133
       imagePullPolicy: Always
-      env:
-        - name: DBUSER
-          value: wafdemodbuser
-        - name: DBPASSWORD
-          value: h6d7GEujNYW06idiNG1qaeuemqZWzZyO
-        - name: DBSERVER
-          value: 40.124.94.133
