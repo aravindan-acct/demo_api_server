@@ -17,4 +17,4 @@ steps:
     namespace: 'petstore'
     manifests: |
       manifests/deployment.yml
-      manifestst/service.yml
+      manifests/service.yml
